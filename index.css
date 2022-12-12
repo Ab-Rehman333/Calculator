@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("/bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.background-color {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.background-color>span {
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+.background-color>#heading {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    margin-left: 5rem;
+
+}
+
+.background-color>#inner-span {
+    margin-left: 8rem;
+}
+
+.calculator {
+    height: 390px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    height: 100px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+input::placeholder {
+    color: white;
+    font-size: larger;
+    padding: 1rem;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+
+.for-all-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: .5rem;
+    background-color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.btn {
+    border: none;
+    background-color: #c0c0c05e;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: cursive;
+}
+
+#equal {
+    background-color: rgb(16, 224, 224);
+    color: white;
+}
+
+#plus {
+    background-color: rgb(46 221 75 / 77%);
+    color: black;
+}
+
+#minus {
+    background-color: rgb(152 76 255 / 79%);
+    color: black;
+}
+
+#multi {
+    background-color: rgb(184 70 141 / 73%);
+    color: black;
+}
+
+#del {
+    font-size: 18px;
+    border: 1px solid rgb(224, 127, 127);
+
+}
+
+#clear {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 529px) {
+
+    body {
+
+        background-image: url("/bg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+}
